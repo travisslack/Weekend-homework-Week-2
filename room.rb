@@ -21,3 +21,6 @@ def remove_guest_from_room(person)
 end
 
 end
+
+# push will add it in, delete with delete it. We use person just as a naming parameter
+# We use [] because it starts off as zero and this is when we use this

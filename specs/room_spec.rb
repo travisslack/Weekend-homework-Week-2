@@ -8,7 +8,7 @@ class TestRoom < Minitest::Test
 def setup
   @room1 = Room.new("Room One")
   @room2 = Room.new("Room Two")
-  
+# new recognises initiliaze while in brackets is what is equal to the parameter is
   @guest1 = Guest.new("Travis")
   @guest2 = Guest.new("David")
   
@@ -30,6 +30,7 @@ end
 def test_add_song_to_room
   @room1.add_song_to_room(@song1)
   @room1.add_song_to_room(@song2)
+# 2 is the amount you want to have when finished, @room1 accesses the file, songs access the parameter that is there, the count counts
   assert_equal(2, @room1.songs.count)
 end
 
